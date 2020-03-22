@@ -1,0 +1,253 @@
+body{
+    background-color: aliceblue;
+}
+
+#header{
+    background-color: lightsteelblue;
+}
+#header h1{
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 250;
+    margin-left: 46%;
+}
+
+#course-form , #course-table{
+    margin-top: 30px;
+    background-color: lightsteelblue;
+}
+
+hr{
+    background: black;
+}
+#course-form h1, #course-table h1{
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}.custom-input{
+    position: relative;
+    width: 100%;
+}
+.custom-input input,.custom-input textarea{
+   width: 100%;
+   padding: 10px 0;
+   font-size: 20px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 150;
+   color: black;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 2px solid black;
+   background: transparent;
+   outline: none;
+}
+.custom-input label, .custom-input textarea label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    pointer-events: none;
+    transition: 0.3s;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 230;
+}
+.custom-input input:focus ~ label,
+.custom-input input:valid ~ label
+{
+     top:-18px;
+     left: 0;
+     color: blue;
+     font-size: medium;
+}
+.custom-input textarea:focus ~ label,
+.custom-input textarea:valid ~ label{
+     top:-30px;
+     left: 0;
+     color: blue;
+     font-size: medium;
+}
+input[type="submit"]{
+
+}
+input[type="submit"]{
+   background: green;
+   color: lightgreen;
+   width: 80px;
+   height: 40px;
+   font-size: 20px;
+   border: 1px solid green;
+   border-radius: 4px;
+   transition: .3s;
+   overflow: hidden;
+}
+input[type="submit"]:focus{
+  outline: none;
+}
+input[type="submit"]:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  filter: blur(30px);
+  transform:translateX(-130px) skewX(-15deg);
+}
+input[type="submit"]:after{
+  content: '';
+  display:block;
+  position: absolute;
+  background: darkgrey;
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+input[type="submit"]:hover{
+  background: lightgreen;
+  color: green;
+  border: lightgreen;
+  cursor: pointer;
+}
+input[type="submit"]:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+input[type="submit"]:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+.table-div{
+  width: 100%;
+}
+.table-head{  
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+}
+.table-body{
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: center;
+  border-radius: 5px;
+}
+.content-table {
+border-collapse: collapse;
+margin:  0;
+font-size: 15px;
+min-width: 400px;
+width: 100%;
+border-radius: 5px;
+overflow-x: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+background-color: blue;
+color:aliceblue;
+font-weight: bold;
+
+}
+
+.content-table th{
+
+padding: 12px 10px; 
+max-inline-size: 300px;
+text-align:center;
+}
+.content-table td {
+padding: 12px 40px; 
+max-inline-size: 300px;
+text-align:center;
+}
+.content-table tbody tr {
+border-bottom: 1px solid #dddddd;
+text-align: center;
+max-inline-size: 1px;
+max-block-size: 10px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+background-color: aliceblue;
+}
+.content-table tbody tr:nth-of-type(odd) {
+background-color: lavender;
+}
+
+.content-table tbody tr:last-of-type {
+border-bottom: 2px solid blue;
+}
+
+
+.button-wrapper{
+   background: none;
+   color: lightgreen;
+   width: 80px;
+   height: 40px;
+   font-size: 20px;
+   border: 1px solid lightgreen;
+   border-radius: 4px;
+   transition: .5s;
+   overflow: hidden;
+}
+.button-wrapper:focus{
+  outline: none;
+}
+.button-wrapper:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: ;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  filter: blur(30px);
+  transform:translateX(-130px) skewX(-15deg);
+}
+.button-wrapper:after{
+  content: '';
+  display:block;
+  position: absolute;
+  background: ;
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+.button-wrapper:hover{
+  background: green;
+  cursor: pointer;
+}
+.button-wrapper:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+.button-wrapper:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+.button-container{
+  display: inline-block;
+}
+
+
+
